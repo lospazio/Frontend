@@ -1,0 +1,137 @@
+/* Stile generale */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: linear-gradient(to top, #87ceeb, #ffffff);
+  background-size: 400% 400%;
+  animation: gradient-move 12s ease infinite;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+h1 {
+  font-size: 42px;
+  color: #004aad;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  animation: fade-in 2s ease;
+}
+h2 {
+  font-size: 22px;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+.intro {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  color: #222;
+}
+
+/* Contenitore widget */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.meteo-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 40px;
+}
+.meteo-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+}
+
+/* iframe */
+iframe {
+  border: none;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Crediti */
+.credits {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.credits a {
+  color: #005bbb;
+  text-decoration: none;
+  font-weight: bold;
+}
+.credits a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+/* Recensioni */
+.reviews {
+  background: rgba(255,255,255,0.85);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  max-width: 900px;
+  width: 100%;
+}
+.reviews h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.review-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.review {
+  background: #f7f9fc;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.review:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+.review .text {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.review .author {
+  font-weight: bold;
+  color: #004aad;
+  text-align: right;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+  background: rgba(255,255,255,0.6);
+  margin-top: 30px;
+}
+
+/* Animazioni */
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

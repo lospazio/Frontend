@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meteo + Recensioni</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌤️ Meteo in Italia</h1>
+    <h2>Previsioni settimanali aggiornate</h2>
+    <p class="intro">
+      Qui puoi vedere le condizioni meteo aggiornate della tua città, con le previsioni dei prossimi giorni.
+    </p>
+  </header>
+
+  <main>
+    <div class="meteo-container">
+      <!-- Widget Meteoblue -->
+      <iframe src="https://www.meteoblue.com/it/tempo/widget/three/roma_italia_3169070?geoloc=fixed&nocurrent=0&noforecast=0&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  
+        frameborder="0" scrolling="NO" allowtransparency="true" 
+        sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" 
+        style="width: 805px; height: 611px"></iframe>
+
+      <div class="credits">
+        <a href="https://www.meteoblue.com/it/tempo/settimana/roma_italia_3169070" target="_blank" rel="noopener">Fonte: Meteoblue</a>
+      </div>
+    </div>
+
+    <!-- Recensioni -->
+    <section class="reviews">
+      <h2>💬 Recensioni degli utenti</h2>
+      <div class="review-list">
+        <div class="review">
+          <p class="text">“Il sito è bellissimo, finalmente un widget meteo chiaro e semplice da leggere!”</p>
+          <p class="author">– Giulia R.</p>
+        </div>
+        <div class="review">
+          <p class="text">“Uso questo sito tutti i giorni per controllare il meteo prima di andare al lavoro 🚲”</p>
+          <p class="author">– Marco L.</p>
+        </div>
+        <div class="review">
+          <p class="text">“Accuratissimo, mi ha salvato da un temporale la scorsa settimana ⛈️”</p>
+          <p class="author">– Federica P.</p>
+        </div>
+        <div class="review">
+          <p class="text">“Consigliatissimo! Facile, veloce e con grafica super 👍”</p>
+          <p class="author">– Andrea M.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creato da <strong>Abdul</strong> • Progetto Meteo Web</p>
+  </footer>
+</body>
+</html>
